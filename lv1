@@ -1,0 +1,14 @@
+class Calculator {
+    fun calculate (num : Int ):String {
+        var answer : String = num.toInt().toString()
+        return answer
+    }       
+
+}
+
+fun main() {
+    val calculator = Calculator()
+    println(calculator.calculate(1 + 2 - 3))
+    println(calculator.calculate(3 * 100))
+    println(calculator.calculate(8 / 2))
+}
