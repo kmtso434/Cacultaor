@@ -1,14 +1,26 @@
 class Calculator {
-    fun calculate (num : Int ):String {
-        var answer : String = num.toInt().toString()
-        return answer
-    }       
-
+    fun add (num1 : Double , num2 : Double) : Double {
+        return num1 + num2
+    }
+    
+    fun minus (num1 : Double , num2 : Double) : Double {
+        return num1 - num2
+    }
+    
+    fun time (num1 : Double , num2 : Double) : Double {
+        return num1 * num2
+    }
+    
+    fun devide (num1 : Double , num2 : Double) : Double {
+        return num1 / num2
+    }
 }
 
 fun main() {
+    
     val calculator = Calculator()
-    println(calculator.calculate(1 + 2 - 3))
-    println(calculator.calculate(3 * 100))
-    println(calculator.calculate(8 / 2))
+    println(calculator.add(3.0, 4.0 ))
+    println(calculator.minus(3.0, 4.0))
+    println(calculator.time(3.0, 4.0))
+    println(calculator.devide(3.0, 4.0))
 }
